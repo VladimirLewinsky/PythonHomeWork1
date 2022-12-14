@@ -77,14 +77,14 @@
 # - 3 -> 11
 # - 2 -> 10
 
-# x = int(input('Введите число: '))
-# y =''
-# while x != 0:
-#     y = str(x %2) +2
-#     x = x //2
+x = int(input('Введите число: '))
+y =''
+while x != 0:
+    y = str(x %2) +y
+    x = x //2
 
 
-# print(y)
+print(y)
 
 
 # 5.Задайте число. Составьте список чисел Фибоначчи, в том числе для отрицательных индексов.
@@ -94,34 +94,34 @@
 # - для k = 8 список будет выглядеть так: [-21 ,13, -8, 5, −3, 2, −1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21]
 
 
-k = int(input('введите спсиок чисел  фибоначи: '))
+# k = int(input('введите спсиок чисел  фибоначи: '))
 
 
-y = -k
-lst = []
-lst2 = []
+# y = -k
+# lst = []
+# lst2 = []
 
-for i in range(k+1):
+# for i in range(k+1):
 
-    if i == 0:
-        lst.append(i)
-    if i == 1 or i == 2:
-        lst.append(1)
+#     if i == 0:
+#         lst.append(i)
+#     if i == 1 or i == 2:
+#         lst.append(1)
 
-    if i > 2:
-        lst.append(lst[i-1]+lst[i-2])
+#     if i > 2:
+#         lst.append(lst[i-1]+lst[i-2])
 
 
-while y <= k:
-    if y < 0:
-        if y % 2 == 0:
-            lst2.append(lst[-y] * -1)
-        else:
-            lst2.append(lst[-y])
+# while y <= k:
+#     if y < 0:
+#         if y % 2 == 0:
+#             lst2.append(lst[-y] * -1)
+#         else:
+#             lst2.append(lst[-y])
 
-    else:
-        lst2.append(lst[y])
-    y += 1
+#     else:
+#         lst2.append(lst[y])
+#     y += 1
 
-print(lst)
-print(lst2)
+# print(lst)
+# print(lst2)

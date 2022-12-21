@@ -189,3 +189,4 @@ with open(file_path_summ, 'w') as data_c:
     data_c.write(lst + '\n')
     data_c.write(lstb + '\n')
     data_c.write(finalsumm)
+
